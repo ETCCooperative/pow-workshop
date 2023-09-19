@@ -3,7 +3,7 @@
   "nonce":"0x0",
   "timestamp":"0x0",
   "extraData":"0x0000000000000000000000000000000000000000",
-  "gasLimit":"8000000",
+  "gasLimit":"0x7a1200",
   "difficulty":"0x01",
   "mixHash":"0x0000000000000000000000000000000000000000000000000000000000000000",
   "coinbase":"0x0000000000000000000000000000000000000000",
@@ -12,8 +12,8 @@
   "alloc":{
   },
   "config":{
-    "networkId": 12345,
-    "chainId": 12345,
+    "networkId": 8932763451,
+    "chainId": 8932763451,
     "eip2FBlock": 0,
     "eip7FBlock": 0,
     "eip150Block": 0,
@@ -40,8 +40,6 @@
     "eip2200FBlock": 0,
     "ecip1010PauseBlock": 0,
     "ecip1010Length": 0,
-    "ecip1017FBlock": 0,
-    "ecip1017EraRounds": 0,
     "ecip1099FBlock": 0,
     "ecbp1100FBlock": 0,
     "eip2565FBlock": 0,
