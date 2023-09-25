@@ -49,7 +49,7 @@ INFO [09-19|15:18:31.854] Successfully wrote genesis state         database=ligh
 **5. Start Your Private Node**
 - After initializing the private network, you can start your core-geth private node with the following command:
   ```bash
-  ./geth --datadir workshop_datadir --networkid 8932763451 --http --http.corsdomain "*" --bootnodes enode://4d191f544f993eddf3d0ef7c996d33643822c59995cf72aa1fdcb980f11018d53ffd3c9b66bef42ff5737692fe6600284310e48a0804c010a0f3d9c94c646463@127.0.0.1:30303
+  ./geth --datadir workshop_datadir --networkid 8932763451 --http --http.corsdomain "*" --syncmode full --bootnodes enode://4d191f544f993eddf3d0ef7c996d33643822c59995cf72aa1fdcb980f11018d53ffd3c9b66bef42ff5737692fe6600284310e48a0804c010a0f3d9c94c646463@127.0.0.1:30303
   ```
 
 - Replace datadir, if needed, with the same path used in the initialization step.
@@ -62,7 +62,7 @@ INFO [09-19|15:18:31.854] Successfully wrote genesis state         database=ligh
 - Create a wallet so as to use its address as the etherbase.
 - Run geth with the `--mine` flag to enable mining.
   ```bash
-  ./geth --datadir workshop_datadir --networkid 8932763451 --http --http.corsdomain "*" --bootnodes enode://4d191f544f993eddf3d0ef7c996d33643822c59995cf72aa1fdcb980f11018d53ffd3c9b66bef42ff5737692fe6600284310e48a0804c010a0f3d9c94c646463@2.87.118.100:30303 --miner.etherbase "<SET_YOUR_ETHERBASE>" --miner.threads 2 --mine
+  ./geth --datadir workshop_datadir --networkid 8932763451 --http --http.corsdomain "*" --syncmode full --bootnodes enode://4d191f544f993eddf3d0ef7c996d33643822c59995cf72aa1fdcb980f11018d53ffd3c9b66bef42ff5737692fe6600284310e48a0804c010a0f3d9c94c646463@2.87.118.100:30303 --miner.etherbase "<SET_YOUR_ETHERBASE>" --miner.threads 2 --mine
   ```
 
 > IMPORTANT: On a mining node, never expose the HTTP or WS APIs. Doing so will allow anyone to control your node and steal your funds.
